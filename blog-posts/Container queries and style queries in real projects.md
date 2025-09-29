@@ -1,4 +1,14 @@
+---
+title: "CSS 2025: Container queries and style queries in real projects"
+date: 2025-09-29
+author: Valentyn Yakymenko
+origin: human
+ai_generated: false
+---
+
 # CSS 2025: Container queries and style queries in real projects
+
+If you’re like me, you’ve probably wrestled with components that look perfect in one column and fall apart in another. The first time I flipped a layout with just a container width—no media queries—I felt like I’d been cheating the system all these years. Container queries finally let our components listen to the space they actually get.
 
 When container queries graduated from “someday” to “widely shipping,” responsive CSS changed for good. In 2025, you can design and ship components that adapt to their parent, not the viewport, and you can conditionally style components based on the styling of their container too. This post is a field guide to using size queries, style queries, and container units in real projects — including patterns, migration strategies, and pitfalls to avoid.
 
@@ -348,3 +358,5 @@ References and further reading
 - Chromium and WebKit release notes for latest property support
 
 If you adopt only one thing this quarter, make it this: move responsive logic into the component. Container and style queries make your UI more portable, robust, and easier to design. Ship them behind @supports, and you’ll be future‑proof without leaving any users behind.
+
+— Thanks for reading. If you ship something cool with container or style queries, I’d love to hear about it. Ping me on Twitter/X or drop me an email to make this guide better.
